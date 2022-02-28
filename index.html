@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,65 +15,149 @@
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <div class="card title-card" id="title-card">
+    <div class="title-main">
+      <img src="./images/image-jeremy.png" alt="A portrait of a man. He is a mystery.">
+      <p>Report for</p>
+      <h1>John Doe</h1>  
+    </div>
 
-  Daily
-  Weekly
-  Monthly
+    <ul class="title-list">
+      <li>Daily</li>
+      <li>Weekly</li>
+      <li>Monthly</li>
+    </ul>
+  </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+  <div class="card time-card" id="work">
+    <h2 class="card-header">Work</h2>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <div class="card-content">
+      <div class="daily">
+        <h3 class="daily-time">5hrs</h3>
+        <p class="daily-previous">Previous - 7hrs</p>
+      </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <div class="weekly">
+        <h3 class="weekly-time">32hrs</h3>
+        <p class="weekly-previous">Previous - 36hrs</p>
+      </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+      <div class="monthly">
+        <h3 class="monthly-time">103hrs</h3>
+        <p class="monthly-previous">Previous - 128hrs</p>
+      </div>
+    </div>
+  </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+  <div class="card time-card" id="play">
+    <h2 class="card-header">Play</h2>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+    <div class="card-content">
+      <div class="daily">
+        <h3 class="daily-time">1hr</h3>
+        <p class="daily-previous">Previous - 2hrs</p>
+      </div>
 
+      <div class="weekly">
+        <h3 class="weekly-time">10hrs</h3>
+        <p class="weekly-previous">Previous - 8hrs</p>
+      </div>
+
+      <div class="monthly">
+        <h3 class="monthly-time">23hrs</h3>
+        <p class="monthly-previous">Previous - 29hrs</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card time-card" id="study">
+    <h2 class="card-header">Study</h2>
+
+    <div class="card-content">
+      <div class="daily">
+        <h3 class="daily-time">0hrs</h3>
+        <p class="daily-previous">Previous - 1hr</p>
+      </div>
+
+      <div class="weekly">
+        <h3 class="weekly-time">4hrs</h3>
+        <p class="weekly-previous">Previous - 7hrs</p>
+      </div>
+
+      <div class="monthly">
+        <h3 class="monthly-time">13hrs</h3>
+        <p class="monthly-previous">Previous - 19hrs</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card time-card" id="exercise">
+    <h2 class="card-header">Exercise</h2>
+
+    <div class="card-content">
+      <div class="daily">
+        <h3 class="daily-time">1hr</h3>
+        <p class="daily-previous">Previous - 1hr</p>
+      </div>
+
+      <div class="weekly">
+        <h3 class="weekly-time">4hrs</h3>
+        <p class="weekly-previous">Previous - 5hrs</p>
+      </div>
+
+      <div class="monthly">
+        <h3 class="monthly-time">11hrs</h3>
+        <p class="monthly-previous">Previous - 18hrs</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card time-card" id="social">
+    <h2 class="card-header">Social</h2>
+
+    <div class="card-content">
+      <div class="daily">
+        <h3 class="daily-time">1hr</h3>
+        <p class="daily-previous">Previous - 3hrs</p>
+      </div>
+
+      <div class="weekly">
+        <h3 class="weekly-time">5hrs</h3>
+        <p class="weekly-previous">Previous - 10hrs</p>
+      </div>
+
+      <div class="monthly">
+        <h3 class="monthly-time">21hrs</h3>
+        <p class="monthly-previous">Previous - 23hrs</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card time-card" id="self-care">
+    <h2 class="card-header">Self Care</h2>
+
+    <div class="card-content">
+      <div class="daily">
+        <h3 class="daily-time">0hrs</h3>
+        <p class="daily-previous">Previous - 1hr</p>
+      </div>
+
+      <div class="weekly">
+        <h3 class="weekly-time">2hrs</h3>
+        <p class="weekly-previous">Previous - 2hrs</p>
+      </div>
+
+      <div class="monthly">
+        <h3 class="monthly-time">7hrs</h3>
+        <p class="monthly-previous">Previous - 11hrs</p>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/JaxonAdams">Jaxon Adams</a>.
   </div>
 </body>
 </html>
