@@ -12,6 +12,7 @@ body {
 .card {
     border-radius: 15px;
     padding: 2rem 1.5rem;
+    padding-top: 0;
     /* Temporary -- Please Remove */
     background-color: tomato;
 }
@@ -60,34 +61,55 @@ body {
     cursor: pointer;
 }
 
+.card-header {
+    text-shadow: 0 0 8px black;
+}
+
+.card-content {
+    background-color: steelblue;
+    width: 90%;
+    height: 70%;
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+    right: 1.5rem;
+    padding: 1.5rem 2rem;
+}
+
 #work {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    background: url("../images/icon-work.svg");
 }
 
 #play {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    background: url("../images/icon-play.svg");
 }
 
 #study {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
+    background: url("../images/icon-study.svg");
 }
 
 #exercise {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    background: url("../images/icon-exercise.svg");
 }
 
 #social {
     grid-row: 1 / 2;
     grid-column: 4 / 5;
+    background: url("../images/icon-social.svg");
 }
 
 #self-care {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
+    background: url("../images/icon-self-care.svg");
 }
 
 .hide {
